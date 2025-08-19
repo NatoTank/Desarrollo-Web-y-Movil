@@ -1,0 +1,40 @@
+h1 {
+font-family: sans-serif; 
+font-size: 40px; 
+color:blue;
+text-align: center; 
+}
+
+.card-lang-top {
+  display: block;      
+  margin: 0 auto;
+  font-family: sans-serif;       
+  width: 400px;     
+  height: auto;    
+}
+
+.card-header{
+    font-size:2.5vw;
+    font-family: sans-serif;
+    text-align:center;
+    color:green;
+}
+
+.card-body{
+    font-size:2vw;
+    font-family: sans-serif;
+    text-align:center;
+    color:lightcoral;
+}
+
+.card-footer{
+    font-size:3vw;
+    font-family: sans-serif;
+    text-align:center;
+}
+
+#dul option{
+    font-size:1vw;
+    font-family: sans-serif;
+    color:brown;
+}
