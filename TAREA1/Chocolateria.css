@@ -1,0 +1,14 @@
+/* Todos los links */
+.navbar-nav .nav-link {
+    color: #ff6600; /* naranja */
+}
+
+/* Link activo */
+.navbar-nav .nav-link.active {
+    color: #ff6600; /* mismo color que los demás */
+}
+
+/* Hover */
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* amarillo al pasar el mouse */
+}
