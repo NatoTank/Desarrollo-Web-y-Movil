@@ -9,20 +9,22 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- (Opcional) Bootstrap Icons -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-  <!-- Tu CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="Chocolateria.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 <body>
   
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
     <div class="container">
-      <!-- Logo en vez de texto -->
       <a class="navbar-brand" href="#">
-        <img src="CHOLATERIA CHOCOMANIA LOGO.png" alt="Chocomania" width="100" height="75" class="d-inline-block align-text-top">
+        <img src="CHOLATERIA CHOCOMANIA LOGO.png" alt="Chocomania" width="120" height="85" class="d-inline-block align-text-top">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
@@ -36,19 +38,25 @@
           <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
         </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-cart fs-5"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
-  <!-- CAROUSEL / HERO -->
+  <!-- HERO / CAROUSEL -->
   <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <!-- Ejemplo de slide vacío -->
       <div class="carousel-item active">
-        <img src="assets/slide1.jpg" class="d-block w-100" alt="...">
+        <img src="Chocolate.jp" class="d-block w-50" alt="chocolates">
       </div>
       <div class="carousel-item">
-        <img src="assets/slide2.jpg" class="d-block w-100" alt="...">
+        <img src="Bombones.jp" class="d-block w-100" alt="bombones">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -64,17 +72,33 @@
     <div class="container">
       <h2 class="mb-4 text-center">Productos</h2>
       <div class="row g-4">
-        <!-- Card producto -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="assets/producto1.jpg" class="card-img-top" alt="Producto">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 d-flex flex-column">
+            <img src="Alfajores.jpg" class="card-img-top" alt="Alfajores">
             <div class="card-body">
-              <h5 class="card-title">Producto</h5>
-              <p class="card-text">Descripción corta</p>
+              <h5 class="card-title">Alfajores</h5>
+              <p class="card-text">Alfajores rellenos de manjar</p>
             </div>
           </div>
         </div>
-        <!-- Repite col-md-4 para más productos -->
+        <div class="col-12 col-md-4">
+          <div class="card h-100 d-flex flex-column">
+            <img src="Chocolate.jpg" class="card-img-top" alt="Chocolate">
+            <div class="card-body">
+              <h5 class="card-title">Chocolates</h5>
+              <p class="card-text">Tabletas de chocolate negro o blanco a preferencia del consumidor</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 d-flex flex-column">
+            <img src="Bombones.jpg" class="card-img-top" alt="Bombones">
+            <div class="card-body">
+              <h5 class="card-title">Bombones</h5>
+              <p class="card-text">Bombones a la venta rellenos de manjar, chocolate o frambuesa</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -82,8 +106,17 @@
   <!-- SECCIÓN NOSOTROS -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="mb-4 text-center">Nosotros</h2>
-      <p class="text-center">Aquí puedes contar la historia de la chocolatería, misión y valores.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="mb-4">Nosotros</h2>
+          <p>
+            Historia chocolateria
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="assets/nosotros.jpg" class="img-fluid rounded" alt="Nosotros">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -91,38 +124,41 @@
   <section class="py-5">
     <div class="container">
       <h2 class="mb-4 text-center">Contacto</h2>
-      <form class="mx-auto" style="max-width: 500px;">
-        <div class="mb-3">
-          <label class="form-label">Nombre</label>
-          <input type="text" class="form-control">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
         </div>
-        <div class="mb-3">
-          <label class="form-label">Correo</label>
-          <input type="email" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Mensaje</label>
-          <textarea class="form-control" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      </form>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
+  <footer class="text-light py-4">
+    <div class="container d-flex justify-content-center">
       <small>&copy; <span id="year"></span> Chocomania. Todos los derechos reservados.</small>
     </div>
   </footer>
 
-  <!-- Bootstrap Bundle con Popper -->
+  <!-- Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Tu JS -->
+  <!-- JS propio -->
   <script src="js/main.js"></script>
   <script>
-    // Año dinámico en footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

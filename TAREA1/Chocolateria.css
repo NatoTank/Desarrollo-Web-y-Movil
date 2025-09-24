@@ -1,14 +1,24 @@
-/* Todos los links */
-.navbar-nav .nav-link {
-    color: #ff6600; /* naranja */
+:root {
+  --choco-navbar: #BCAAA4;   /* café muy suave */
+  --choco-gold: #C5A572;     /* dorado suave */
+  --choco-bg: #FAF9F7;       /* fondo claro */
 }
 
-/* Link activo */
-.navbar-nav .nav-link.active {
-    color: #ff6600; /* mismo color que los demás */
+.navbar {
+  background-color: var(--choco-navbar) !important;
+}
+.navbar .nav-link {
+  color: black !important; /* café oscuro para contraste */
+}
+.navbar .nav-link:hover {
+  color: var(--choco-gold) !important;
 }
 
-/* Hover */
-.navbar-nav .nav-link:hover {
-    color: #ffcc00; /* amarillo al pasar el mouse */
+footer {
+  background-color: var(--choco-navbar);
+  color: #3E2723;
+}
+.card-img-top {
+  height: 250px;         /* puedes ajustar el alto (ej: 200px o 300px) */
+  object-fit: cover;     /* recorta la imagen sin deformarla */
 }
