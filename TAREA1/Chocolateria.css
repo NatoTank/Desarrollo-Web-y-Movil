@@ -4,21 +4,53 @@
   --choco-bg: #FAF9F7;       /* fondo claro */
 }
 
+body {
+  background-color: var(--choco-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
 .navbar {
   background-color: var(--choco-navbar) !important;
 }
 .navbar .nav-link {
-  color: black !important; /* café oscuro para contraste */
+  color: #3E2723 !important; 
+  font-weight: 500;
 }
 .navbar .nav-link:hover {
   color: var(--choco-gold) !important;
 }
 
+/* CAROUSEL */
+.carousel img {
+  max-height: 550px;
+  object-fit: cover;
+}
+
+/* TARJETAS */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* FOOTER */
 footer {
   background-color: var(--choco-navbar);
   color: #3E2723;
+  font-weight: 500;
 }
-.card-img-top {
-  height: 250px;         /* puedes ajustar el alto (ej: 200px o 300px) */
-  object-fit: cover;     /* recorta la imagen sin deformarla */
+
+/* BOTONES */
+.btn-outline-primary {
+  border-color: var(--choco-gold);
+  color: var(--choco-gold);
+}
+.btn-outline-primary:hover {
+  background-color: var(--choco-gold);
+  color: #fff;
+}
+
+/* FORMULARIO */
+form input, form textarea {
+  border-radius: 10px;
 }
