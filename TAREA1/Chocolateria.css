@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* NAVBAR */
+
 .navbar {
   background-color: var(--choco-navbar) !important;
 }
@@ -21,26 +21,20 @@ body {
   color: var(--choco-gold) !important;
 }
 
-/* CAROUSEL */
-.carousel img {
-  max-height: 550px;
-  object-fit: cover;
-}
 
-/* TARJETAS */
 .card-img-top {
   height: 250px;
   object-fit: cover;
 }
 
-/* FOOTER */
+
 footer {
   background-color: var(--choco-navbar);
   color: #3E2723;
   font-weight: 500;
 }
 
-/* BOTONES */
+
 .btn-outline-primary {
   border-color: var(--choco-gold);
   color: var(--choco-gold);
@@ -50,7 +44,14 @@ footer {
   color: #fff;
 }
 
-/* FORMULARIO */
+
 form input, form textarea {
   border-radius: 10px;
+}
+
+.carousel-item img {
+  height: 500px !important;       
+  width: 100%;                     
+  object-fit: cover;               
+  object-position: center center;  
 }
